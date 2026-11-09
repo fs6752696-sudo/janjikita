@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>janjiKita | Kopi & Risol</title>
+    <meta name="description" content="Temukan kopi favorit dan risol lezat dari janjiKita.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="#home" class="brand">
+            <img src="images/logo-janjikita.jpg"
+                 alt="Logo janjiKita Kopi dan Risol">
+            <span>janjiKita</span>
+        </a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#tentang">Tentang Kami</a>
+            <a href="#pesanan">Pesanan</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="subtitle">KOPI • RISOL • CERITA KITA</p>
+
+                <h1>
+                    Setiap Cerita<br>
+                    Punya <span>Rasanya.</span>
+                </h1>
+
+                <p>
+                    Temani harimu dengan kopi favorit dan risol
+                    lezat dari janjiKita. Temukan rasa yang cocok
+                    untuk setiap momenmu.
+                </p>
+
+                <a href="#menu" class="btn">Jelajahi Menu</a>
+            </div>
+
+            <div class="hero-image">
+                <img src="img/logo.jpeg"
+                     alt="janjiKita Kopi dan Risol">
+            </div>
+        </section>
+
+        <!-- MENU -->
+        <section class="menu-section" id="menu">
+            <div class="section-heading">
+                <p class="subtitle">PILIHAN FAVORIT</p>
+                <h2>Menu janjiKita</h2>
+                <p>
+                    Pilih teman santaimu hari ini.
+                </p>
+            </div>
+
+            <div id="daftar-menu" class="menu-grid">
+                <!-- Menu dibuat oleh JavaScript -->
+            </div>
+        </section>
+
+        <!-- KERANJANG -->
+        <section class="cart-section" id="pesanan">
+            <div class="section-heading">
+                <p class="subtitle">PESAN FAVORITMU</p>
+                <h2>Keranjang Pesanan</h2>
+            </div>
+
+            <div class="cart-box">
+                <div id="isi-keranjang">
+                    <p class="empty-cart">
+                        Keranjang kamu masih kosong.
+                    </p>
+                </div>
+
+                <div class="cart-summary">
+                    <div>
+                        <p>Total pembayaran</p>
+                        <strong id="total-harga">Rp0</strong>
+                    </div>
+                </div>
+
+                <form id="form-pesanan">
+                    <label for="nama-pelanggan">
+                        Nama pelanggan
+                    </label>
+                    <input
+                        type="text"
+                        id="nama-pelanggan"
+                        placeholder="Masukkan nama kamu"
+                        required
+                    >
+
+                    <label for="telepon-pelanggan">
+                        Nomor telepon
+                    </label>
+                    <input
+                        type="tel"
+                        id="telepon-pelanggan"
+                        placeholder="Masukkan nomor telepon"
+                        required
+                    >
+
+                    <button type="submit" class="btn">
+                        Buat Pesanan
+                    </button>
+                </form>
+
+                <p id="pesan-status" aria-live="polite"></p>
+            </div>
+        </section>
+
+        <!-- TENTANG KAMI -->
+        <section class="about-section" id="tentang">
+            <p class="subtitle">CERITA KAMI</p>
+            <h2>Tentang janjiKita</h2>
+
+            <p>
+                janjiKita adalah tempat untuk menikmati kopi
+                dan camilan dalam momen sederhana. Karena setiap
+                pertemuan punya cerita, dan setiap cerita punya rasa.
+            </p>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <a href="#home" class="footer-brand">janjiKita</a>
+        <p>KOPI & RISOL</p>
+        <p>&copy; 2026 janjiKita. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="script.js"></script>
+</body>
+</html>
